@@ -13,29 +13,39 @@
     />
   </head>
   <body>
-    <main>
-      <section>
-        <h1>Preguntas IA</h1>
-        <p id="contador" class="visually-hidden">Pregunta 1 de 10</p>
-      </section>
-      <section id="sectionComenzar">
-        <button id="botonComenzar">Comenzar!</button>
-      </section>
-      <section class="visually-hidden" id="sectionPregunta">
-        <p>Cual es la definicion de:</p>
-        <p id="pregunta"></p>
-      </section>
-      <section class="visually-hidden" id="sectionRespuesta">
-        <p>Respuesta:</p>
-        <p id="respuesta"></p>
-      </section>
-      <section class="visually-hidden" id="sectionBotones">
-        <button type="button" id="botonCorrecto">La se!</button>
-        <button type="button" id="botonIncorrecto">No la se :(</button>
-      </section>
-      <section class="visually-hidden" id="sectionContinuar">
-        <button type="button" id="botonSiguiente">Siguiente</button>
-      </section>
+    <main
+      class="d-flex justify-content-center align-items-center flex-column m-5"
+    >
+      <div class="bg-light p-5 rounded-2">
+        <section>
+          <h1>Preguntas IA</h1>
+          <p id="contador" class="visually-hidden">Pregunta 1 de 10</p>
+        </section>
+        <section id="sectionComenzar">
+          <button class="btn btn-primary" id="botonComenzar">Comenzar!</button>
+        </section>
+        <section class="visually-hidden" id="sectionPregunta">
+          <p>Cual es la definicion de:</p>
+          <p id="pregunta"></p>
+        </section>
+        <section class="visually-hidden" id="sectionRespuesta">
+          <p>Respuesta:</p>
+          <p id="respuesta"></p>
+        </section>
+        <section class="visually-hidden" id="sectionBotones">
+          <button type="button" class="btn btn-primary" id="botonCorrecto">
+            La se!
+          </button>
+          <button type="button" class="btn btn-primary" id="botonIncorrecto">
+            No la se :(
+          </button>
+        </section>
+        <section class="visually-hidden" id="sectionContinuar">
+          <button type="button" class="btn btn-primary" id="botonSiguiente">
+            Siguiente
+          </button>
+        </section>
+      </div>
     </main>
     <script src="main.js"></script>
   </body>
