@@ -15,7 +15,7 @@ let preguntas = [
     "Inferencia por equiparación",
     "Adecuación de las redes semánticas",
     "Dificultades de las redes semánticas",
-    "Agente resolve de problemas",
+    "Agente resolvente de problemas",
     "Espacio de estados",
     "El nodo tiene:",
     "Condiciones de un búsqueda",
