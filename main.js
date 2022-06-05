@@ -73,9 +73,10 @@ let pregunta = document.getElementById("pregunta"),
     sectionBotones = document.getElementById("sectionBotones"),
     sectionContinuar = document.getElementById("sectionContinuar");
 
-//numero random entre 0 y 27
-let numeroRandom = Math.floor(Math.random() * 27);
-let listadoNumeros = [numeroRandom];
+//numero random entre 0 y 26
+let numeroRandom = Math.floor(Math.random() * 26);
+let listadoNumeros = [];
+listadoNumeros.push(numeroRandom);
 let contadorPreguntas = 0;
 let contadorCorrectas = 0;
 
@@ -90,9 +91,9 @@ let funcionNuevaPregunta = function() {
     respuesta.innerHTML = "<img src='" + respuestas[numeroRandom] + "'>";
     sectionBotones.className = "";
     sectionContinuar.className = "visually-hidden";
-    numeroRandom = Math.floor(Math.random() * 27);
+    numeroRandom = Math.floor(Math.random() * 26);
     while (listadoNumeros.includes(numeroRandom)) {
-        numeroRandom = Math.floor(Math.random() * 27);
+        numeroRandom = Math.floor(Math.random() * 26);
     }
     listadoNumeros.push(numeroRandom);
 }
@@ -111,7 +112,7 @@ let funcionCorreccion = function(correcto) {
         sectionRespuesta.className = "";
         sectionBotones.className = "visually-hidden";
         sectionPregunta.className = "";
-        contador.innerHTML = "Has acertado " + contadorCorrectas + " de 10 preguntas";
+        contador.innerHTML = "Has acertado " + contadorCorrectas + " de 10 preguntas, recarga la página para volver a intentarlo";
     }
 }
 

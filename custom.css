@@ -1,0 +1,9 @@
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .colfull {
+        display: none;
+    }
+}
